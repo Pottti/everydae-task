@@ -1,0 +1,15 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "everydae",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "operatorAliases":0,
+    "define": {
+      "timestamps": false
+    },
+     "logging": false
+  }
+
+}
