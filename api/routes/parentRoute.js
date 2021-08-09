@@ -54,6 +54,7 @@ router.get('/getuserdata/:id', async (req,res) =>{
         }
     })
     
+    
 
     //Calculate Total Hours Spent on challenges
     var query = {
@@ -75,6 +76,7 @@ router.get('/getuserdata/:id', async (req,res) =>{
     if(getTotalStudyTime.length > 0){
         sum = "00:00:00"
     }
+
     getTotalStudyTime.forEach((el) => {
         
         let tempSum = add([sum, el.time_spent])
@@ -110,7 +112,7 @@ router.get('/parent/:id', (req, res) => {
     
         res.send(profile)
     })
-    .catch(err => console.log(err,'errr'))
+    .catch(err => console.log(err,'err'))
 }) 
 
 
